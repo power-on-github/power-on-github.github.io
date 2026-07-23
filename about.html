@@ -12,6 +12,17 @@
         <link rel="icon" type="image/x-icon" href="assets/poweron.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Linkedin 아이콘 스타일 -->
+        <style>
+            .linkedin-icon i {
+                font-size: 1.3rem;
+                color: #0A66C2;
+                transition: opacity 0.2s ease;
+            }
+            .linkedin-icon:hover i {
+                opacity: 0.6;
+            }
+        </style>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -58,14 +69,23 @@
                     <div class="column mb-5" style="display:flex; flex-direction:row; width:100%; flex-wrap:wrap; justify-content: center; align-items:center;">
                         <div class="flex-shirink-0">
                             <!-- 회장 사진 부분, assets/members/ 폴더 안에 사진 넣어서 경로 넣어주면 됨! -->
-                            <img class="box" src="assets/members/hjKim_ver2.png">
+                            <!-- 사진 클릭 시 Linkedin으로 이동. Linkedin 미연결 시 <a> 태그를 지우고 img만 남기면 됨 -->
+                            <a href="https://www.linkedin.com/in/hanjoon-kim-7455383b1/" target="_blank" rel="noopener noreferrer">
+                                <img class="box" src="assets/members/hjKim_ver2.png">
+                            </a>
                         </div>
                         <div class="media-content flex-grow-1 py-5 px-5" style="display:flex; align-items:center">
-                            <div class="content">
-                                <p class="p-name">
-                                    <!-- 이름 수정 부분 -->
-                                    <strong>김한준<strong>
-                                    <small>회장</small>
+                            <div class="content" style="width:100%">
+                                <p class="p-name" style="display:flex; justify-content:flex-start; align-items:center; gap:8px;">
+                                    <span>
+                                        <!-- 이름 수정 부분 -->
+                                        <strong>김한준</strong>
+                                        <small>회장</small>
+                                    </span>
+                                    <!-- Linkedin 아이콘. Linkedin 미연결 시 이 <a> 태그 전체를 삭제하면 됨 -->
+                                    <a class="linkedin-icon" href="https://www.linkedin.com/in/hanjoon-kim-7455383b1/" target="_blank" rel="noopener noreferrer" aria-label="김한준 Linkedin">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
                                 </p>
                                 <!-- 간단한 인사 -->
                                 <p>
@@ -89,53 +109,66 @@
                         <div class="flex-grow-0 column mb-5" style="display:flex; flex-direction:row; width:50%; flex-wrap:wrap; justify-content: center; align-items:center">
                             <div class="flex-shirink-0">
                                 <!-- 멤버 사진 부분, assets/members/ 폴더 안에 사진 넣어서 경로 넣어주면 됨! -->
+                                <!-- Linkedin 미연결: 사진을 <a>로 감싸고 href에 프로필 주소를 넣으면 연결됨 -->
                                 <img class="box-member" src="assets/members/jiLee.png">
                             </div>
-                            <div class="flex-grow-1 px-5" style="display:flex; justify-content: left; align-items: center;">
-                                <p class="content" style="width:180px">
+                            <div class="flex-grow-1 px-5" style="display:flex; justify-content: flex-start; align-items: center; gap:8px;">
+                                <p class="content" style="margin:0;">
                                     <!-- 이름과 직책 -->
                                     <strong>이종인</strong> <small> 부회장 & 교육부장 </small>
                                 </p>
+                                <!-- Linkedin 미연결: 아이콘을 표시하려면 아래처럼 <a class="linkedin-icon" href="..."><i class="fab fa-linkedin"></i></a> 를 추가하면 됨 -->
                             </div>
                         </div>
                         <!-- 블록 끝 -->
                         <!-- 위 블록 하나를 복붙해서 사용하면 됨! -->
-                        
-                        
+
+
                         <div class="flex-grow-0 mb-5" style="display:flex; flex-direction:row; width:50%; flex-wrap:wrap; justify-content: center; align-items:center">
                             <div class="flex-shirink-0">
                                 <!-- 멤버 사진 부분, assets/members/ 폴더 안에 사진 넣어서 경로 넣어주면 됨! -->
+                                <!-- Linkedin 미연결: 사진을 <a>로 감싸고 href에 프로필 주소를 넣으면 연결됨 -->
                                 <img class="box-member" src="assets/members/msKim.png">
                             </div>
-                            <div class="flex-grow-1 px-5" style="display:flex; justify-content: left; align-items: center;">
-                                <p class="content" style="width:150px">
+                            <div class="flex-grow-1 px-5" style="display:flex; justify-content: flex-start; align-items: center; gap:8px;">
+                                <p class="content" style="margin:0;">
                                     <!-- 이름과 직책 -->
                                     <strong>김민식</strong> <small> 총무 & 장비부 </small>
                                 </p>
+                                <!-- Linkedin 미연결: 아이콘을 표시하려면 아래처럼 <a class="linkedin-icon" href="..."><i class="fab fa-linkedin"></i></a> 를 추가하면 됨 -->
                             </div>
                         </div>
                         <div class="flex-grow-0 column mb-5" style="display:flex; flex-direction:row; width:50%; flex-wrap:wrap; justify-content: center; align-items:center">
                             <div class="flex-shirink-0">
                                 <!-- 멤버 사진 부분, assets/members/ 폴더 안에 사진 넣어서 경로 넣어주면 됨! -->
-                                <img class="box-member" src="assets/members/shKim.png">
+                                <!-- 사진 클릭 시 Linkedin으로 이동. Linkedin 미연결 시 <a> 태그를 지우고 img만 남기면 됨 -->
+                                <a href="https://www.linkedin.com/in/sanghun-kim24" target="_blank" rel="noopener noreferrer">
+                                    <img class="box-member" src="assets/members/shKim.png">
+                                </a>
                             </div>
-                            <div class="flex-grow-1 px-5" style="display:flex; justify-content: left; align-items: center;">
-                                <p class="content" style="width:200px">
+                            <div class="flex-grow-1 px-5" style="display:flex; justify-content: flex-start; align-items: center; gap:8px;">
+                                <p class="content" style="margin:0;">
                                     <!-- 이름과 직책 -->
                                     <strong>김상훈</strong> <small> 홍보부장 </small>
                                 </p>
+                                <!-- Linkedin 아이콘. Linkedin 미연결 시 이 <a> 태그 전체를 삭제하면 됨 -->
+                                <a class="linkedin-icon" href="https://www.linkedin.com/in/sanghun-kim24" target="_blank" rel="noopener noreferrer" aria-label="김상훈 Linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="flex-grow-0 mb-5" style="display:flex; flex-direction:row; width:50%; flex-wrap:wrap; justify-content: center; align-items:center">
                             <div class="flex-shirink-0">
                                 <!-- 멤버 사진 부분, assets/members/ 폴더 안에 사진 넣어서 경로 넣어주면 됨! -->
+                                <!-- Linkedin 미연결: 사진을 <a>로 감싸고 href에 프로필 주소를 넣으면 연결됨 -->
                                 <img class="box-member" src="assets/members/jhPark.png">
                             </div>
-                            <div class="flex-grow-1 px-5" style="display:flex; justify-content: left; align-items: center;">
-                                <p class="content" style="width:110px">
+                            <div class="flex-grow-1 px-5" style="display:flex; justify-content: flex-start; align-items: center; gap:8px;">
+                                <p class="content" style="margin:0;">
                                     <!-- 이름과 직책 -->
                                     <strong>박준형</strong> <small> 장비부장 </small>
                                 </p>
+                                <!-- Linkedin 미연결: 아이콘을 표시하려면 아래처럼 <a class="linkedin-icon" href="..."><i class="fab fa-linkedin"></i></a> 를 추가하면 됨 -->
                             </div>
                         </div>
 
